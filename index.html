@@ -3,99 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facundo Montaño | QA & Automation Tester</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>Facundo Montaño | QA Tester & Futuro Ingeniero</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1 class="animate-title">Facundo Montaño</h1>
+        <p class="subtitle">QA Manual & Automation | Futuro Ingeniero Informático</p>
+    </header>
 
-<!-- HEADER -->
-<header class="header">
-    <div class="container">
-        <h1 class="logo">Facundo Montaño</h1>
-        <nav class="nav">
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobremi">Sobre Mí</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-<!-- INICIO -->
-<section id="inicio" class="hero">
-    <div class="container">
-        <h2>Ingeniero en QA y Automatización</h2>
-        <p>Especialista en pruebas manuales y automatización con Java</p>
-        <a href="CV_Facundo_Montano.pdf" class="btn">Descargar CV</a>
-    </div>
-</section>
-
-<!-- SOBRE MÍ -->
-<section id="sobremi" class="about">
-    <div class="container">
-        <h2>Sobre Mí</h2>
-        <p>Hola, soy Facundo Montaño, QA Tester con experiencia en pruebas manuales y automatización. Apasionado por la calidad del software y siempre en busca de nuevos desafíos en el mundo IT.</p>
-    </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="skills">
-    <div class="container">
-        <h2>Habilidades Técnicas</h2>
-        <div class="skills-grid">
-            <div class="skill">Java <span>85%</span></div>
-            <div class="skill">Selenium <span>80%</span></div>
-            <div class="skill">Python <span>90%</span></div>
-            <div class="skill">SQL <span>75%</span></div>
-            <div class="skill">HTML & CSS <span>70%</span></div>
+    <section id="about">
+        <img src="images/profile.jpg" alt="Foto de Facundo" class="profile-img">
+        <div class="about-text">
+            <h2>Sobre Mí</h2>
+            <p>Apasionado por el testing y en constante aprendizaje en el mundo de la programación. 
+               Actualmente finalizando mi carrera en Ingeniería Informática y buscando oportunidades remotas 
+               para seguir creciendo como QA tester.</p>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- PROYECTOS -->
-<section id="proyectos" class="projects">
-    <div class="container">
-        <h2>Proyectos Destacados</h2>
-        <div class="project-grid">
+    <section id="skills">
+        <h2>Habilidades</h2>
+        <div class="skills-container">
+            <div class="skill">Java</div>
+            <div class="skill">Selenium</div>
+            <div class="skill">Git & GitHub</div>
+            <div class="skill">Metodologías Ágiles</div>
+            <div class="skill">Testing Manual</div>
+            <div class="skill">Testing Automation</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Proyectos</h2>
+        <div class="projects-container">
             <div class="project-card">
-                <h3>Automatización en Selenium</h3>
-                <p>Scripts para automatizar pruebas en aplicaciones web.</p>
-                <a href="https://github.com/Casperov-jujuy/Selenium-Tests" target="_blank">Ver en GitHub</a>
+                <img src="images/project1.jpg" alt="Proyecto 1">
+                <h3>Gestor de Turnos para Canchas</h3>
+                <p>Sistema backend en Python para la gestión de reservas de canchas sintéticas de fútbol.</p>
             </div>
             <div class="project-card">
-                <h3>Framework de Testing en Java</h3>
-                <p>Desarrollo de un framework modular para pruebas automatizadas.</p>
-                <a href="https://github.com/Casperov-jujuy/Java-Framework" target="_blank">Ver en GitHub</a>
+                <img src="images/project2.jpg" alt="Proyecto 2">
+                <h3>Automatización de Pruebas</h3>
+                <p>Framework de testing en Java con Selenium para pruebas automatizadas en sitios web.</p>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- CONTACTO -->
-<section id="contacto" class="contact">
-    <div class="container">
-        <h2>Contacto</h2>
-        <form action="enviar_formulario.php" method="post">
-            <input type="text" name="nombre" placeholder="Tu nombre" required>
-            <input type="email" name="email" placeholder="Tu email" required>
-            <textarea name="mensaje" placeholder="Tu mensaje"></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
-</section>
+    <footer>
+        <p>Encuéntrame en <a href="https://www.linkedin.com/in/facundo-montaño" target="_blank">LinkedIn</a> | &copy; 2024 Facundo Montaño</p>
+    </footer>
 
-<footer>
-    <div class="container">
-        <p>&copy; 2024 Facundo Montaño. Todos los derechos reservados.</p>
-        <div class="social">
-            <a href="https://www.linkedin.com/in/facundo-monta%C3%B1o-52358888/"><i class="fa-brands fa-linkedin"></i></a>
-        </div>
-    </div>
-</footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
