@@ -2,376 +2,100 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Caspercito </title>
-    <link rel="stylesheet" href="estilo.css">
+    <title>Facundo Montaño | QA & Automation Tester</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- MENU ENCABEZADO -->
-    <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">ingeniero jr</a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
-                </ul>
-            </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="container">
+        <h1 class="logo">Facundo Montaño</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobremi">Sobre Mí</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </div>
+</header>
 
-    <!-- SECCION INICIO -->
-    <section id="inicio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="img/Principal.jpg" alt="">
-            </div>
-            <h1>Facundo  Montaño</h1>
-            <h2>Ingeniero de Software - Full Stack Python - analisis de Datos</h2>
-            <div class="redes">
-                
-                <a href="https://www.linkedin.com/in/facundo-monta%C3%B1o-52358888/"><i class="fa-brands fa-linkedin-in"></i></a>
-            </div>
-           
+<!-- INICIO -->
+<section id="inicio" class="hero">
+    <div class="container">
+        <h2>Ingeniero en QA y Automatización</h2>
+        <p>Especialista en pruebas manuales y automatización con Java</p>
+        <a href="CV_Facundo_Montano.pdf" class="btn">Descargar CV</a>
+    </div>
+</section>
+
+<!-- SOBRE MÍ -->
+<section id="sobremi" class="about">
+    <div class="container">
+        <h2>Sobre Mí</h2>
+        <p>Hola, soy Facundo Montaño, QA Tester con experiencia en pruebas manuales y automatización. Apasionado por la calidad del software y siempre en busca de nuevos desafíos en el mundo IT.</p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills">
+    <div class="container">
+        <h2>Habilidades Técnicas</h2>
+        <div class="skills-grid">
+            <div class="skill">Java <span>85%</span></div>
+            <div class="skill">Selenium <span>80%</span></div>
+            <div class="skill">Python <span>90%</span></div>
+            <div class="skill">SQL <span>75%</span></div>
+            <div class="skill">HTML & CSS <span>70%</span></div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- SECCION SOBRE MI -->
-    <section id="sobremi" class="sobremi">
-        <div class="contenido-seccion">
-            <h2>Sobre Mí</h2>
-            <p><span>Hola, soy Facundo Montaño: </span> 
-                Soy programador autodidacta, me desarrollo en el mundo web , trabajando en pequeños proyectos, tantos personales como para emprendedores o PYMES.
-                Me encuentro en el 5to año de la carrera de ingenieria, mi lenguaje madre es Python, lo utilice para realizar proyectos de escritorio, para trabajar con el analisis de datos y poder realizar regresion lineal , y hasta pequeños proyectos web para formularios .
-                en mis tiempos de recreación, me gusta realizar bicicleta, entrenar aikido, y jugar ajedrez.
-            </p>
-
-            <div class="fila">
-                <!-- datos personales -->
-                <div class="col">
-                    <h3>Datos Personales</h3>
-                    <ul>
-                        
-                        <li>
-                            <strong>Teléfono</strong>
-                            388 -4558325
-                        </li>
-                        <li>
-                            <strong>Email</strong>
-                            montanofacundo@gmail.com
-                        </li>
-                        
-                      
-                        <li>
-                            <strong>Cargo</strong>
-                            <span>FULL STACK PYTHON</span>
-                            <span>ANALISIS DE DATOS </span>
-                            <span>BUSINESS ANALYST</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- intereses -->
-                <div class="col">
-                    <h3>Intereses</h3>
-                    <div class="contenedor-intereses">
-                        <div class="interes">
-                            <i class="fa-solid fa-gamepad"></i>
-                            <span>JUEGOS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-headphones"></i>
-                            <span>MUSICA</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-plane"></i>
-                            <span>VIAJAR</span>
-                        </div>
-                        
-                        <div class="interes">
-                            <i class="fa-solid fa-person-hiking"></i>
-                            <span>DEPORTE</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-book"></i>
-                            <span>LIBROS</span>
-                        </div>
-                        
-                    </div>
-                </div>
+<!-- PROYECTOS -->
+<section id="proyectos" class="projects">
+    <div class="container">
+        <h2>Proyectos Destacados</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Automatización en Selenium</h3>
+                <p>Scripts para automatizar pruebas en aplicaciones web.</p>
+                <a href="https://github.com/Casperov-jujuy/Selenium-Tests" target="_blank">Ver en GitHub</a>
             </div>
-            
-        </div>
-    </section>
-
-    <!-- SECCION SKILLS -->
-    <section class="skills" id="skills">
-        <div class="contenido-seccion">
-            <h2>Skills</h2>
-            <div class="fila">
-                <!-- Technical Skill -->
-                <div class="col">
-                    <h3>Technical Skills</h3>
-                    <div class="skill">
-                        <span>Javascript</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>75%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>HTML & CSS</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>75%</span>
-                            </div>
-                        </div>
-                    </div>
-                   
-                    <div class="skill">
-                        <span>Python</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Angular</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>70%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>SQL</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Professional Skills -->
-                <div class="col">
-                    <h3>Professional Skills</h3>
-                    <div class="skill">
-                        <span>Comunicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Trabajo en Equipo</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>70%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Dedicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>100%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Creatividad</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>60%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Proyect Management</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="project-card">
+                <h3>Framework de Testing en Java</h3>
+                <p>Desarrollo de un framework modular para pruebas automatizadas.</p>
+                <a href="https://github.com/Casperov-jujuy/Java-Framework" target="_blank">Ver en GitHub</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- SECCION CURRICULUM -->
-    <section id="curriculum" class="curriculum">
-        <div class="contenido-seccion">
-            <h2>Curriculum</h2>
-            <div class="fila">
-                <div class="col izquierda">
-                    <h3>Educación</h3>
-                    <div class="item izq">
-                        <h4>Secundaria</h4>
-                        <span class="casa">Secundaria- Bachillerato 2 </span>
-                        
-                        <p>escuela secundaria donde realice mis estudios de Bachillerato</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Universidad</h4>
-                        <span class="casa">UNIVERSIDAD NACIONAL DE JUJUY- UNJU </span>
-                        
-                        <p>me encuentro cursando el 5to año del plan de estudio de la carrera de ingenieria informatica, me formo en mis primeros pasos para el mundo IT, aprendiendo mi primer lenguaje de programacion como PASCAL.
+<!-- CONTACTO -->
+<section id="contacto" class="contact">
+    <div class="container">
+        <h2>Contacto</h2>
+        <form action="enviar_formulario.php" method="post">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu email" required>
+            <textarea name="mensaje" placeholder="Tu mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</section>
 
-                        </p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-
-                    </div>
-                    <div class="item izq">
-                        <h4>UDEMY-FULL STACK PYTHON</h4>
-                        <span class="casa">curso autodidacta </span>
-                        <p>en mis tiempos libres, compre un curso en la plataforma udemy donde me enseño como entrar, y encarar el mundo del desarrollo web</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>CODO A CODO 4.0</h4>
-                        <span class="casa">bunnies analytics </span>
-                        
-                        <p>en estos momentos, me estoy capacitando en el analisis de datos, ya que obtuve un cupo en el "codo a codo" de la cuidad de buenos aires, con herramientas como EXCEL, POWER BI Y PYTHON</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    
-                </div>
-
-                <div class="col derecha">
-                    <h3>Experiencia de trabajo</h3>
-                    <div class="item der">
-                        <h4>Front Developer</h4>
-                        <span class="casa">Peluqueria "Patricia Burgos"</span>
-                        <span class="fecha">2020</span>
-                        <p>
-                            en mis primeros pasos de la construccion de paginas estaticas, aprendiendo HTML, CSS y un poco de JS ... le realice una pagina de presentación a una pequeña Pyme de mi zona, que me dio la oportunidad de poder mostrar y subir a mi repositorio
-                        </p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Proyecto Escritorio</h4>
-                        <span class="casa">Calculadora - "Python"</span>
-                        <span class="fecha">2021</span>
-                        <p>
-                            realice un pequeño proyecto de escritorio, realizado en Python, utlizando la libreria tkinter para utilizar los botones de operaciones, y lograr que cumpla con cada de sus funciones.
-                        </p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Proyecto UDEMY</h4>
-                        <span class="casa">FRONTEND- BACKEND</span>
-                        <span class="fecha">2022</span>
-                        <p>
-                        durante este curso, realice el proyecto a mano que va aplicando conocimientos de HTML, CSS para moldear la pagina.
-                        PYTHON Y DJANGO para los formularios, y aprendi hacer y crear tablas con MySql
-                        </p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Facundo Montaño. Todos los derechos reservados.</p>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/facundo-monta%C3%B1o-52358888/"><i class="fa-brands fa-linkedin"></i></a>
         </div>
-    </section>
+    </div>
+</footer>
 
-    <!-- SECCION PORTFOLIO -->
-    <section id="portfolio" class="portfolio">
-        <div class="contenido-seccion">
-            <h2>PORTAFOLIO</h2>
-            <div class="galeria">
-                <div class="proyecto">
-                    <img src="img/p1.jpg" alt="">
-                    <div class="overlay">
-                        <a href="www.patriciaburgos.com.ar"><img src="img/p1.jpg" ></a>
-                        
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p2.jpg">
-                    <div class="overlay">
-                        <a href="https://github.com/Casperov-jujuy/Calculadora-Python"> <img src="img/p2.jpg" ></a>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p3.jpg" alt="">
-                    <div class="overlay">
-                        <a href="https://github.com/Casperov-jujuy/Udemy"><img src="img/p3.jpg" ></a>
-                        
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-
-    <!-- SECCION CONTACTO -->
-    <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
-            <h2>CONTACTO</h2>
-            <div class="fila">
-                <!-- Formulario -->
-               
-                <!-- Mapa -->
-                <div class="col">
-                    
-                    <div class="info">
-                        <ul>
-                            
-                            <li>
-                                <i class="fa-solid fa-mobile-screen"></i>
-                                TELEFONO: 388 - 4558325 
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                Email: montanofacundo@gmail.com
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- footer -->
-    <footer>
-        <a href="#inicio" class="arriba">
-            <i class="fa-solid fa-angles-up"></i>
-        </a>
-        <div class="redes">
-            
-            <a href="https://www.linkedin.com/in/facundo-monta%C3%B1o-52358888/"><i class="fa-brands fa-linkedin-in"></i></a>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
